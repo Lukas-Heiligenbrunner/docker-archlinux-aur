@@ -57,9 +57,9 @@ jobs:
             AUR_USER=ab
           tags: |
             ghcr.io/lukas-heiligenbrunner/archlinux-aur:latest
-            ghcr.io/greyltc-org/archlinux-aur:${{ env.THIS_TAG }}
-            ghcr.io/greyltc-org/archlinux-aur:paru
-            ghcr.io/greyltc-org/archlinux-aur:paru-${{ env.THIS_TAG }}
+            ghcr.io/lukas-heiligenbrunner/archlinux-aur:${{ env.THIS_TAG }}
+            ghcr.io/lukas-heiligenbrunner/archlinux-aur:paru
+            ghcr.io/lukas-heiligenbrunner/archlinux-aur:paru-${{ env.THIS_TAG }}
       -
         name: Build yay container
         uses: docker/build-push-action@v6
@@ -72,5 +72,5 @@ jobs:
             HELPER=yay
             AUR_USER=ab
           tags: |
-            ghcr.io/greyltc-org/archlinux-aur:yay
-            ghcr.io/greyltc-org/archlinux-aur:yay-${{ env.THIS_TAG }}
+            ghcr.io/lukas-heiligenbrunner/archlinux-aur:yay
+            ghcr.io/lukas-heiligenbrunner/archlinux-aur:yay-${{ env.THIS_TAG }}
