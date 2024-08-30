@@ -1,5 +1,5 @@
 # Arch Linux base docker container with AUR helper (paru or yay, default paru)
-FROM lopsided/archlinux as update-mirrors
+FROM lopsided/archlinux:latest as update-mirrors
 
 # update mirrorlist
 ADD https://raw.githubusercontent.com/greyltc/docker-archlinux/master/get-new-mirrors.sh /usr/bin/get-new-mirrors
